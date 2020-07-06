@@ -1,0 +1,392 @@
+/* Resetting */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(218, 28%, 13%);
+  color: hsl(0, 0%, 100%);
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* navbar-section */
+
+nav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 15% 250px;
+  justify-content: space-between;
+  padding: 40px 50px;
+  background-color: hsl(217, 28%, 15%);
+  align-items: center;
+}
+
+nav img {
+  width: 100%;
+}
+
+.navigate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigate a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+/* intro-section */
+
+.intro {
+  text-align: center;
+  background-color: hsl(217, 28%, 15%);
+  background-image: url('../images/bg-curvy-desktop.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 50px 50px 100px;
+
+  display: grid;
+  grid-template-columns: 600px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.intro-illustration img {
+  width: 100%;
+}
+
+.intro h1 {
+  margin: 30px 0;
+}
+
+.intro p {
+  width: 500px;
+}
+
+.get-started-button {
+  margin: 20px auto;
+  width: 250px;
+  padding: 10px;
+  background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  border: none;
+  border-radius: 28px;
+  color: inherit;
+  outline: none;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+/* features-section */
+
+.features {
+  padding: 30px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-gap: 50px 70px;
+  grid-template-columns: repeat(2, 425px);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+}
+
+.feature {
+  text-align: center;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: 90px auto auto;
+  justify-items: center;
+  align-items: center;
+}
+
+/* stay-productive */
+
+.stay-productive {
+  padding: 100px 50px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-container {
+  justify-self: center;
+}
+
+.left-container img {
+  width: 100%;
+}
+
+.right-container {
+  align-self: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 550px;
+  align-items: center;
+}
+
+.right-container h1 {
+  width: 300px;
+}
+
+.how-it-works {
+  width: 170px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+  color: hsl(176, 68%, 64%);
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.how-it-works:hover {
+  cursor: pointer;
+}
+
+/* team-section */
+
+.team {
+  padding: 100px 50px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, 400px);
+  justify-content: center;
+}
+
+.team-mem {
+  position: relative;
+  padding: 30px;
+  background-color: hsl(219, 30%, 18%);
+  display: grid;
+  grid-gap: 20px;
+  box-shadow: 10px 10px rgba(28, 36, 49);
+}
+
+.quotes {
+  position: absolute;
+  top: -35px;
+  left: -10px;
+  z-index: -1;
+}
+
+.team-mem-profile {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: 50px;
+  align-items: center;
+}
+
+.team-mem-profile img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+/* Sign-In section */
+
+.sign-in {
+  background-color: hsl(217, 28%, 15%);
+  opacity: 0.8;
+  text-align: center;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin: auto;
+  width: 55%;
+  padding: 50px;
+  display: grid;
+  grid-gap: 20px;
+
+  position: relative;
+  top: 100px;
+}
+
+.contact-form {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 200px;
+}
+
+.contact-form input {
+  padding: 10px 30px;
+  outline: none;
+  border-radius: 30px;
+  border: none;
+}
+
+.contact-form input::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.sign-in-button {
+  margin: 0;
+  width: 100%;
+}
+
+/* footer section */
+
+.footer {
+  background-color: hsl(216, 53%, 9%);
+  padding: 150px 50px 50px;
+}
+
+.foot-wrap {
+  padding-top: 20px;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 3fr 2fr repeat(2, 1fr) 2fr;
+}
+
+.footer-col p {
+  margin-bottom: 10px;
+}
+
+.contact {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 20px 1fr;
+}
+
+.foot-icon {
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid hsl(0, 0%, 100%);;
+}
+
+.foot-icon:nth-child(even) {
+  margin: 0 10px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1140px) {
+
+  /* stay-productive */
+
+  .right-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 990px) {
+
+  /* navbar-section */
+
+  nav {
+    grid-template-columns: 20% 250px;
+  }
+
+  /* intro-section */
+
+  .intro {
+    background-image: url('../images/bg-curvy-mobile.svg');
+  }
+
+  /* feature-section */
+
+  .features {
+    grid-template-columns: 425px;
+    grid-template-rows: auto;
+  }
+
+  /* stay-productive */
+
+  .stay-productive {
+    grid-template-columns: auto;
+  }
+
+  .right-container h1 {
+    width: 100%;
+  }
+
+  /* sign-in section */
+
+  .sign-in {
+    width: 95%;
+  }
+
+  .contact-form {
+    grid-template-columns: auto;
+  }
+
+  /* footer-section */
+
+  .foot-wrap {
+    grid-template-columns: auto;
+  }
+
+  .footer-col:nth-child(5) {
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 725px) {
+
+  /* navbar-section */
+
+  nav {
+    grid-template-columns: 25% 220px;
+  }
+
+  /* intro-section */
+
+  .intro {
+    grid-template-columns: auto;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+
+  /* navbar-section */
+
+  nav {
+    font-size: 14px;
+    padding: 40px 30px;
+    grid-template-columns: 30% 170px;
+  }
+
+  /* features-section */
+
+  .features {
+    grid-template-columns: auto;
+  }
+
+  /* team-section */
+
+  .team {
+    grid-template-columns: auto;
+  }
+
+  .team-mem-profile {
+    grid-template-columns: 40px auto;
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 375px) {
+
+  /* navbar-section */
+
+  nav {
+    font-size: 12px;
+    grid-template-columns: 30% 140px;
+  }
+
+  /* team-section */
+
+  .team-mem-profile {
+    font-size: 12px;
+  }
+}
